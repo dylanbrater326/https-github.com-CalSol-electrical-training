@@ -1,4 +1,4 @@
-#CalSol New Member Training Documents
+# CalSol New Member Training Documents
 
 ## Contents
 1. Account and Computer setup, Intro to Git
