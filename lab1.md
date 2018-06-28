@@ -17,7 +17,7 @@ Weekly meetings
 ## Format
 Every week or so, a short (15 min or less) lecture will introduce the focus of the lab and give you essential information and a place to get started. Each lab will have a goal and some sort of end product as a goal, which you will be submitting to your brainch of the electrical-training repository on CalSol's github when you finish. This is mainly to help you get comfortable with git, but also so we can keep track of how everyone is doing. We will have "office hours" when you can come by and ask for help, based on the lab that you're working on.
 
-##THE LESSON PT 1
+## THE LESSON PT 1
 ### Computer Setup
 The goal this week is to set up the toolchain that we use for compiling and building our firmware. Firmware is the name of all of the C code that runs on the various chips throughout the car, whether that be the Battery Management System, the front Lights Controller, or the Pedal Board. Our toolchain has 3 main components: GCC-ARM, SCons, and OpenOCD. GCC-ARM is the compiler that builds files compatable with the architecture of our microcontrollers, different from the x86 that probably runs on your laptop. SCons is a build system similar to Make or Automake that makes building a complex project with many dependencies easier, and OpenOCD helps with flashing and debugging. If you want to learn more about any of these tools specifically, Google is a great resource, but feel free to ask any returning member if you have questions. 
 
