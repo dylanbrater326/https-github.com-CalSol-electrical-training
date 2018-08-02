@@ -1,4 +1,4 @@
-# CalSol New Member Training Week 1
+# CalSol New Member Training 1
 ## Lab 1.1: Setup and Installation
 * Start learning how to use Git
 * Get access to Slack, Git, Google Drive, Trello, and the wiki

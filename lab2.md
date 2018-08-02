@@ -1,5 +1,5 @@
-# CalSol New Member Training Week 2
-##Lab 1.2: BrainTrain and intro to C
+# CalSol New Member Training 2.1
+##Lab 1.2: BRAIN Train and intro to C
 * work through the first braintrain lab
 * get familiar with coding in C in an embedded environment
 
