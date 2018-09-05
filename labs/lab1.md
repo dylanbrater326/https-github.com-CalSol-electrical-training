@@ -21,19 +21,22 @@ Every week or so, a short (15 min or less) lecture will introduce the focus of t
 ### Computer Setup
 The goal this week is to set up the toolchain that we use for compiling and building our firmware. Firmware is the name of all of the C code that runs on the various chips throughout the car, whether that be the Battery Management System, the front Lights Controller, or the Pedal Board. Our toolchain has 3 main components: GCC-ARM, SCons, and OpenOCD. GCC-ARM is the compiler that builds files compatable with the architecture of our microcontrollers, different from the x86 that probably runs on your laptop. SCons is a build system similar to Make or Automake that makes building a complex project with many dependencies easier, and OpenOCD helps with flashing and debugging. If you want to learn more about any of these tools specifically, Google is a great resource, but feel free to ask any returning member if you have questions. 
 
-If you are running Linux or OSX, follow the instructions [here](https://github.com/CalSol/Zephyr-FW) by scrolling down to the README and use brew, apt, or the appropriate package manager. For Windows, the process is more in depth, so we've created a shell script that should be able to set up the environment as long you're okay with things being installed in their default places. if you really want to go through the process (please don't unless you're super particular about where things get installed or have a strange setup), the link above will give you set-by-step instructions of how to install everything you need. Don't worry about the Eclipse part of the setup unless you're dead set on using the IDE to code, otherwise it's a little more trouble than it's worth.
+If you are running Linux or OSX, follow the instructions [here](https://github.com/CalSol/Tachyon-FW) by scrolling down to the README and use brew, apt, or the appropriate package manager. For Windows, the process is more complicated and involves more than typing 5 lines into terminal. The link should give you step by step instructions on what to download, follow directions and ask for help if something doesn't add up. Don't worry about the Eclipse part of the setup unless you really want to the IDE to code, the plug-ins can be a little finicky. The alterative is to use whatever text editor you want, from Sublime to Atom to Vim to Notepad++.
  
-Your goal for the week is to have everything set up, clone the firmware repository on git, and be able to build it by runing SCons. The next part of the readme guides you through cloning the Zephyr-FW repository on git, and once you have a local copy you should be able to run the command
+Your goal for the week is to have everything set up, clone the firmware repository on git, and be able to build it by runing scons. The next part of the readme guides you through cloning the Tachyon-FW repository on git, and once you have a local copy you should be able to run the command
 ```
 scons
 ```
 to build all of the files. Once it works without erroring, take a screenshot of your terminal output, and that will be what you submit for your first lab's work! To do so, you will clone the electrical-training repository, make your own branch, and push your picture.
 
+### Hardware
+The last think that you need is KiCAD. You can find that [here](http://kicad-pcb.org/download/), and just follow the instructions for whatever description fits your computer. Also clone the Tachyon-HW repository on github.
+
 
 ### Git Setup and How to Commit
 
 Setup:
-1. clone the respository, you will have to type in your git username and password
+1. clone the respository, you will have to type in your git username and password. Use the Desktop gui, or type this into your terminal
 ```
 git clone https://github.com/CalSol/electrical-training.git
 ```
@@ -48,11 +51,11 @@ To Submit:
 ```
 git status
 ```
-2. add some files to git's tracking
+2. add some files to git's staging system 
 ```
 git add <name of file>
 ```
-3. commit them
+3. commit them to be ready to be pushed
 ```
 git commit -m <message>
 ```

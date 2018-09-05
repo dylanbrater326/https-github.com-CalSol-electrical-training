@@ -15,3 +15,6 @@ Ask for a demo by an existing member and watch carefully. Don't be afraid to ask
 - Flux is your friend.
 - Tinning tips is important! If the tip of the soldering iron you're using isn't nice and shiny, solder won't stick to it, and it'll transfer heat worse. Tin the tip by melting a blob of solder onto it and wiping off the access in a copper wool. A thin layer, just enoug to coat the tip, should stay behind. If you're worried, ask for help.
 - Soldering takes forever when you start. Don't worry.
+
+## Next Steps
+The board that you just soldered is designed to work with a BRAIN and blink some LEDs. We're going to write firmware that can blink the LEDs, just as a little more practice.

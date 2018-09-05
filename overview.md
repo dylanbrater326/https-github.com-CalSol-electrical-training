@@ -10,23 +10,17 @@ The goal of this week is to get set up for embedded programming next week. That 
 ## Week 2: BRAIN train part 1
 Introduction to embedded programming and firmware. I wish we could teach you how to program a car, but sadly we don't have the time to do that. You'll learn how to make some lights blink though.
 
-## Week 3: BRAIN train part 2
-Getting a little closer to programming a car. Learning the basics of CAN, a communication protocal used in most cars. See? We'll get there.
-
-## Week 4: Soldering
+## Week 3: Soldering
 Find your way of doing surface-mount soldering. Soldering boards involves being comfortable with tweezers in one hand and a soldering iron in the other, and even if you've never soldered anything before you'll have a nice LED board completed by the end of this week. Then we'll write some code to have amazing blinky lights.
 
-## Week 5: Circuits
+## Week 4: Circuits
 Resistors, capacitors, diodes, ICs, crystals, all the commonly used components for the boards on our cars. We'll talk the basics of what each does and the math of why we use them.
 
-## Week 6: Schematic blocks
-Building on the circuits we made last week, we can put everything together to create a bigger, better circuit that actually does something. Here we'll talk high level block diagram and CalSolsubblockets.
-
-## Week 7: KiCAD schematic
+## Week 5: KiCAD schematic
 Start learning how to use our favorite circuit board design software, KiCAD. Get all of the circuit components into your schematic in an organized, reviewable way with the standard CalSol settings.
 
-## Week 8: KiCAD layout
+## Week 6: KiCAD layout
 Become a true hardware person and work with those circuit lines that you see everywhere. Introduce yourself to KiCAD's layout tool and arrange that schematic onto a board that you one day might be able to hold.
 
-## Week 9: Up to you
+## Week 7: Up to you
 Pick a topic or ongoing project, and learn as much as you can about it. Find the person currently working on that project, or find someone that knows a lot about that subject. Ask them questions, google what you don't understand, and figure out what you're interested in working on :)
