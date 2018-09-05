@@ -65,4 +65,4 @@ git push origin <your-branch-name>
 ```
 
 ## Conclusion
-And that's it for the first week's lab! Please fill out our anonymous feedback form, and be ready to start writing c next week :)
+And that's it for the first week's lab! Please fill out our anonymous feedback form, and be ready to start writing C++ next week :)
