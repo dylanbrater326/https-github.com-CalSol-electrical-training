@@ -1,4 +1,4 @@
-# CalSol New Member Training 3
+# CalSol Electrical Workshop
 ## Lab 3: Soldering
 * practice soldering surface-mount components
 

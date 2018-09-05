@@ -1,5 +1,5 @@
-# CalSol New Member Training 1
-## Lab 1.1: Setup and Installation
+# CalSol Electrical Workshop
+## Lab 1: Setup and Installation
 * Start learning how to use Git
 * Get access to Slack, Git, Google Drive, Trello, and the wiki
 * Get your laptop set up to write firmware

@@ -1,4 +1,4 @@
-# CalSol New Member Training 4
+# CalSol Electrical Workshop
 ## Lab 4: Circuits
 * learn basic circuit componets and how they work together
 * start learning about the board that you will create
