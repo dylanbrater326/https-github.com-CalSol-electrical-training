@@ -40,7 +40,7 @@ Setup:
 ```
 git clone https://github.com/CalSol/electrical-training.git
 ```
-2. create a new branch, use hyphens or underscores to make life easier
+2. create a new branch in the electrical-training repository, use hyphens or underscores to make life easier
 ```
 git checkout -b <your-name>
 ```
