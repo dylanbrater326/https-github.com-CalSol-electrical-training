@@ -22,9 +22,19 @@ Similarly, for resistors in parallel, the current across each is I_i = V / R_i, 
 Using these rules solve the following problem:
 
 #### Capacitors in Parallel and Series
+To determine what the equivalent capacitance is for capacitors in series and in parallel, we are going to use the equation Q=CV.
+For capacitors in parallel, the voltage across them is the same. The charge on each is Q_i = VC_i and the total charge is Q = V(C_1 + C_2 + ... + C_n). This means that the equivalent capacitance is the sum of the capacitors in parallel.
+For capacitors in series, the current through them is the same. Since charge is the integral of current over time, the charge on the capacitors is the same. For each capacitor, V_i = Q/C_i, and the total voltage across each is V = Q(1/C_1 + 1/C_2 + ... + 1/C_n). Plugging back into the original equation, theq equivalent capacitance C=1/(1/C_1 + 1/C_2 + ... + 1/C_n)
+
+Using these rules solve the following problem:
+
+#### Switches
+Switches are mechanical components that will connect two pins when it is in the "closed" state and will leave them disconnected in the "open" state.
 
 #### LEDs
-Light Emitting Diodes are diodes that light up when current is run through them.
+Light Emitting Diodes are diodes that light up when current is run through them. Diodes are devices that only allow current flow in one direction. In a schematic view, the arrow points in the direction of current flow. Because of this, LEDs are not reversible, they will only work in one orientation.
+So what equation do we use to calculate the voltage drop across the LED and the current through it? We are going to use a simple model. Given a forward voltage from the datasheet, if the voltage across the diode (keep in mind the direction) is greater than the forward voltage, an infinite amount of current can flow. This means that in a circuit where the LED is on, the voltage across it is the forward voltage, regardless of the current. The current is controlled by the other elements in the circuit (usually a resistor). If the voltage across the diode is less than the forward voltage, then no current will flow and the LED will be off.
+In each of the cases below, assume the forward voltage is 0.7V. In each case, is the LED on? How much current is going through the LED?
 
 
 #### Sensors
@@ -58,7 +68,19 @@ resistors current voltage led something current draw led rated to whatever so ne
 Since capacitors oppose voltage changes we can make a frequency dependent circuit. Intuitavely, low frequency signals change slowly over time and high frequencies change quickly over time. That means that for higher frequencies, the voltage across the capacitor is smaller for a fixed current magnitude. With a resistor in series with the capacitor, the resistor limits current through the capacitor (don't think too much about the math). Therefore, as frequency increases, the voltage across the capacitor decreases. This is called a lowpass filter.
 
 ### The Full Circuit
-start with the micro, say what you need to get a certain part to work and why, then make it a question about how to do that. goal is they draw things out on paper so i'll get pics of the components in kicad that we can add to the lab so they aren't completely clueless.
+We're going to go through the process of designing the full circuit.
+Start off by drawing the following symbol for the microcontroller on a piece of paper.
+
+Photo Here
+
+There's a pin at the top named VDD and a pin at the bottom named VSS. VDD is just another name for the power input and VSS is just another name for ground. Let's say we want to power the microcontroller from the battery. Draw a battery symbol, but don't connect the two just yet, because we also want to have a way of turning the circuit on and off. What should we add in between the battery and the microcontroller to allow for this functionality?
+Additionally, we want a common ground for everything in the circuit, so connect the battery ground to the microcontroller ground. For the following parts keep in mind that the rest of the microcontroller pins can be software configured to be inputs or outputs, so it doesn't matter what pin you connect things to.
+
+Now lets add 4 LEDs to the microcontroller. Lets say the microcontroller outputs are 3V and the forward voltage of the LEDs are 1V. What resistor should we add to each to limit the current to 2mA?
+
+Lets add a button to the microcontroller, so that when its pressed, the microcontroller input reads 0V, and when its open, the microcontroller reads 3V. How should the switch be connected in order to drive 0V when the switch is closed? What do we need to being the voltage to 3V when the switch is open?
+
+Finally, let's add the encoder. The pin in the middle is a ground pin, so let's connect that to ground. The top pin is pin A, and the bottom pin is pin B. Think about the model we use for the encoder, A and B are connected through a switch to ground. What do we need to make the voltage swing between 0V and 3V as the encoder turns?
 
 ## Conclusion
 Next week, you'll be learning how to create this same circuit in the PCB design software we use, KiCAD.
