@@ -15,9 +15,9 @@ The next couple labs have the overall goal of you designing and building a circu
 Using Ohm's Law, we know that V = IR. Additionally, keep in mind Kirchhoff's Current Law (KCL) and Voltage Law (KVL). KVL states that the voltage across any loop is 0, and KCL states that sum of currents at any node is 0.
 Using KCL and KVL, we can see that for series components, the current through them is the same, but the voltage across them is different. For parallel components, the voltage across them is the same, but the current through them is different.
 
-Therefore, for resistors in series, the voltage across each is  V_i = I * R_i, and for the overall voltage: V = I (R_1 + R_2 + ... + R_n). That shows that overall resistance for resistors in series is the sum of resistances.
+Therefore, for resistors in series, the voltage across each is  V_i = I * R_i, and for the overall voltage: V = I (R<sub>1</sub> + R<sub>2</sub> + ... + R<sub>n</sub>). That shows that overall resistance for resistors in series is the sum of resistances.
 
-Similarly, for resistors in parallel, the current across each is I_i = V / R_i, and the overall current is I = V( 1/R_1 + 1/R_2 + ... + 1/R_n). R = 1/(1/R_1 + 1/R_2 + ... + 1/R_n)
+Similarly, for resistors in parallel, the current across each is I_i = V / R_i, and the overall current is I = V( 1/R<sub>1</sub> + 1/R<sub>2</sub> + ... + 1/R<sub>n</sub>). R = 1/(1/R<sub>1</sub> + 1/R<sub>2</sub> + ... + 1/R<sub>n</sub>)
 
 Using these rules solve the following problem:
 
