@@ -15,7 +15,7 @@ The next couple labs have the overall goal of you designing and building a circu
 Using Ohm's Law, we know that V = IR. Additionally, keep in mind Kirchhoff's Current Law (KCL) and Voltage Law (KVL). KVL states that the voltage across any loop is 0, and KCL states that sum of currents at any node is 0.
 Using KCL and KVL, we can see that for series components, the current through them is the same, but the voltage across them is different. For parallel components, the voltage across them is the same, but the current through them is different.
 
-Therefore, for resistors in series, the voltage across each is  V_i = I * R_i, and for the overall voltage: V = I (R<sub>1</sub> + R<sub>2</sub> + ... + R<sub>n</sub>). That shows that overall resistance for resistors in series is the sum of resistances.
+Therefore, for resistors in series, the voltage across each is  V<sub>i</sub> = I * R<sub>i</sub>, and for the overall voltage: V = I (R<sub>1</sub> + R<sub>2</sub> + ... + R<sub>n</sub>). That shows that overall resistance for resistors in series is the sum of resistances.
 
 Similarly, for resistors in parallel, the current across each is I_i = V / R_i, and the overall current is I = V( 1/R<sub>1</sub> + 1/R<sub>2</sub> + ... + 1/R<sub>n</sub>). R = 1/(1/R<sub>1</sub> + 1/R<sub>2</sub> + ... + 1/R<sub>n</sub>)
 
@@ -23,8 +23,8 @@ Using these rules solve the following problem:
 
 #### Capacitors in Parallel and Series
 To determine what the equivalent capacitance is for capacitors in series and in parallel, we are going to use the equation Q=CV.
-For capacitors in parallel, the voltage across them is the same. The charge on each is Q_i = VC_i and the total charge is Q = V(C_1 + C_2 + ... + C_n). This means that the equivalent capacitance is the sum of the capacitors in parallel.
-For capacitors in series, the current through them is the same. Since charge is the integral of current over time, the charge on the capacitors is the same. For each capacitor, V_i = Q/C_i, and the total voltage across each is V = Q(1/C_1 + 1/C_2 + ... + 1/C_n). Plugging back into the original equation, theq equivalent capacitance C=1/(1/C_1 + 1/C_2 + ... + 1/C_n)
+For capacitors in parallel, the voltage across them is the same. The charge on each is Q<sub>i</sub> = VC<sub>i</sub> and the total charge is Q = V(C<sub>1</sub> + C<sub>2</sub> + ... + C<sub>n</sub>). This means that the equivalent capacitance is the sum of the capacitors in parallel.
+For capacitors in series, the current through them is the same. Since charge is the integral of current over time, the charge on the capacitors is the same. For each capacitor, V_i = Q/C<sub>i</sub>, and the total voltage across each is V = Q(1/C<sub>1</sub> + 1/C<sub>2</sub> + ... + 1/C<sub>n). Plugging back into the original equation, theq equivalent capacitance C=1/(1/C<sub>1</sub> + 1/C<sub>2</sub> + ... + 1/C<sub>n</sub>)
 
 Using these rules solve the following problem:
 
@@ -46,11 +46,11 @@ Take a look at the signaling diagram at the bottom of page 2 [here](https://www.
 
 Complete the function below (Pseudocode is ok):
 ~~~~
-bool A_last, B_last;
+bool A<sub>last</sub>, B<sub>last</sub>;
 int get_rotation(bool A, bool B)
 ~~~~
 A and B are the current inputs from the encoder, and get_rotation is called on every timestep
-A_last and B_last are global variables that can be used to keep track of the last state of A and B (This isn't the best practice but it is ok for now, if you want more details on why global variables are not good practice ask a returning member)
+A<sub>last</sub> and B<sub>last</sub> are global variables that can be used to keep track of the last state of A and B (This isn't the best practice but it is ok for now, if you want more details on why global variables are not good practice ask a returning member)
 The function should return -1 on a left turn, 0 on no change, and 1 on a right turn
 
 ### What They Do
