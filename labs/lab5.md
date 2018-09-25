@@ -20,7 +20,7 @@ Therefore, for resistors in series, the voltage across each is  V<sub>i</sub> = 
 Similarly, for resistors in parallel, the current across each is I_i = V / R_i, and the overall current is I = V( 1/R<sub>1</sub> + 1/R<sub>2</sub> + ... + 1/R<sub>n</sub>). R = 1/(1/R<sub>1</sub> + 1/R<sub>2</sub> + ... + 1/R<sub>n</sub>)
 
 Using these rules solve the following problem:
-![Alt text](resistors.svg?raw=true)
+![Alt text](resistors.png?raw=true)
 
 #### Capacitors in Parallel and Series
 To determine what the equivalent capacitance is for capacitors in series and in parallel, we are going to use the equation Q=CV.
